@@ -32,9 +32,9 @@ public class UploadFileRestController {
 
 	@RequestMapping(value="/upload", method=RequestMethod.POST, produces={"application/json"})
 	public @ResponseBody Ack handleFileUpload(@RequestParam("fileName") String fileName, 
-												@RequestParam("uniqueId") String uniqueId,
-												@RequestParam("file") MultipartFile file, 
-												HttpServletRequest httpReq, HttpServletResponse httpResp)
+							@RequestParam("uniqueId") String uniqueId,
+							@RequestParam("file") MultipartFile file, 
+							HttpServletRequest httpReq, HttpServletResponse httpResp)
 	{
 		Ack ack = null;
 		try {
